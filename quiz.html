@@ -4,116 +4,187 @@
     <link rel='stylesheet' type='text/css' href='style-quiz.css'>
   </head>
   <body>
-    <form action=''>
-    <h1>What kind of worldview do you have?</h1>
-    <p>Each of us live our lives in a different mode than other people. That is because we're each born in
-      different parts of the world, raised by a different set of parents, and raised by a certain religion or
-      system of beliefs. Even though this is the reality of the world, it doesn't mean we're right in our lifestyles.
-      How do we know the way we live will make positive eternal consequences. The first step is to figure out what is
-      governing the way we live, our worldviews. Take this quiz to help you figure it out.</p>
-    <div>
-      <p>What continent are you from?</p>
-      <input type = 'radio' id='north' name='continent' value='north' required>
-      <label for='north'>North America</label>
+    <form action='results-quiz.html' method = 'get'>
+      <h1>What kind of worldview do you have?</h1>
+      <p>Each of us live our lives in a different mode than other people. That is because we're each born in
+        different parts of the world, raised by a different set of parents, and raised by a certain religion or
+        system of beliefs. Even though this is the reality of the world, it doesn't mean we're right in our lifestyles.
+        How do we know the way we live will make positive eternal consequences. The first step is to figure out what is
+        governing the way we live, our worldviews. Take this quiz to help you figure it out.</p>
+      <div>
+        <p>What continent are you from?</p>
+        <input type = 'radio' id='north' name='continent' value='north' required>
+        <label for='north'>North America</label>
 
-      <input type = 'radio' id='south' name='continent' value='south' required>
-      <label for='south'>South America</label>
+        <input type = 'radio' id='south' name='continent' value='south' required>
+        <label for='south'>South America</label>
 
-      <input type = 'radio' id='europe' name='continent' value='europe' required>
-      <label for='europe'>Europe</label>
+        <input type = 'radio' id='europe' name='continent' value='europe' required>
+        <label for='europe'>Europe</label>
 
-      <input type = 'radio' id='africa' name='continent' value='africa' required>
-      <label for='africa'>Africa</label>
+        <input type = 'radio' id='africa' name='continent' value='africa' required>
+        <label for='africa'>Africa</label>
 
-      <input type = 'radio' id='asia' name='continent' value='asia' required>
-      <label for='asia'>Asia</label>
+        <input type = 'radio' id='asia' name='continent' value='asia' required>
+        <label for='asia'>Asia</label>
 
-      <input type = 'radio' id='aus' name='continent' value='aus' required>
-      <label for='aus'>Australia</label>
+        <input type = 'radio' id='aus' name='continent' value='aus' required>
+        <label for='aus'>Australia</label>
 
-      <input type = 'radio' id='pacific' name='continent' value='pacific' required>
-      <label for='pacific'>Pacific Islands</label>
-    </div>
-    <div>
-      <p>What is your religion?</p>
-      <input type = 'radio' id='christ' name='religion' value='christ' required>
-      <label for='christ'>Christianity/Catholicism</label>
+        <input type = 'radio' id='pacific' name='continent' value='pacific' required>
+        <label for='pacific'>Pacific Islands</label>
+      </div>
+      <div>
+        <p>What is your religion?</p>
+        <input type = 'radio' id='christ' name='religion' value='christ' required>
+        <label for='christ'>Christianity/Catholicism</label>
 
-      <input type = 'radio' id='jew' name='religion' value='jew' required>
-      <label for='jew'>Judaism</label>
+        <input type = 'radio' id='jew' name='religion' value='jew' required>
+        <label for='jew'>Judaism</label>
 
-      <input type = 'radio' id='islam' name='religion' value='islam' required>
-      <label for='islam'>Islam</label>
+        <input type = 'radio' id='islam' name='religion' value='islam' required>
+        <label for='islam'>Islam</label>
 
-      <input type = 'radio' id='hindu' name='religion' value='hindu' required>
-      <label for='hindu'>Hinduism</label>
+        <input type = 'radio' id='hindu' name='religion' value='hindu' required>
+        <label for='hindu'>Hinduism</label>
 
-      <input type = 'radio' id='shinto' name='religion' value='shinto' required>
-      <label for='shinto'>Shintoism</label>
+        <input type = 'radio' id='shinto' name='religion' value='shinto' required>
+        <label for='shinto'>Shintoism</label>
 
-      <input type = 'radio' id='bud' name='religion' value='bud' required>
-      <label for='bud'>Buddhism</label>
+        <input type = 'radio' id='bud' name='religion' value='bud' required>
+        <label for='bud'>Buddhism</label>
 
-      <input type = 'radio' id='confuse' name='religion' value='confuse' required>
-      <label for='confuse'>Confucianism</label>
+        <input type = 'radio' id='confuse' name='religion' value='confuse' required>
+        <label for='confuse'>Confucianism</label>
 
-      <input type = 'radio' id='tao' name='religion' value='tao' required>
-      <label for='tao'>Taoism</label>
+        <input type = 'radio' id='tao' name='religion' value='tao' required>
+        <label for='tao'>Taoism</label>
 
-      <input type = 'radio' id='anima' name='religion' value='anima' required>
-      <label for='anima'>Animism</label>
+        <input type = 'radio' id='anima' name='religion' value='anima' required>
+        <label for='anima'>Animism</label>
 
-      <input type = 'radio' id='idontknow' name='religion' value='idontknow' required>
-      <label for='idontknow'>Agnosticism</label>
+        <input type = 'radio' id='idontknow' name='religion' value='idontknow' required>
+        <label for='idontknow'>Agnosticism</label>
 
-      <input type = 'radio' id='atheism' name='religion' value='atheism' required>
-      <label for='atheism'>Atheism</label>
+        <input type = 'radio' id='atheism' name='religion' value='atheism' required>
+        <label for='atheism'>Atheism</label>
 
-      <input type = 'radio' id='spirit' name='religion' value='spirit' required>
-      <label for='spirit'>Spiritual, but not religious</label>
-    </div>
-    <div>
-      <p>How much education did you complete?</p>
-      <input type = 'checkbox' id='someh' name='school' value='someh' required>
-      <label for='someh'>Some High School</label>
+        <input type = 'radio' id='spirit' name='religion' value='spirit' required>
+        <label for='spirit'>Spiritual, but not religious</label>
+      </div>
+      <div>
+        <p>How much education did you complete?</p>
+        <input type = 'checkbox' id='someh' name='school' value='someh' required>
+        <label for='someh'>Some High School</label>
 
-      <input type = 'checkbox' id='high' name='school' value='high' required>
-      <label for='high'>High School Graduate</label>
+        <input type = 'checkbox' id='high' name='school' value='high' required>
+        <label for='high'>High School Graduate</label>
 
-      <input type = 'checkbox' id='somec' name='school' value='somec' required>
-      <label for='somec'>Some College</label>
+        <input type = 'checkbox' id='somec' name='school' value='somec' required>
+        <label for='somec'>Some College</label>
 
-      <input type = 'checkbox' id='ass' name='school' value='ass' required>
-      <label for='ass'>Associates</label>
+        <input type = 'checkbox' id='ass' name='school' value='ass' required>
+        <label for='ass'>Associates</label>
 
-      <input type = 'checkbox' id='bach' name='school' value='bach' required>
-      <label for='bach'>Bachelor's</label>
+        <input type = 'checkbox' id='bach' name='school' value='bach' required>
+        <label for='bach'>Bachelor's</label>
 
-      <input type = 'checkbox' id='mas' name='school' value='mas' required>
-      <label for='mas'>Master's</label>
+        <input type = 'checkbox' id='mas' name='school' value='mas' required>
+        <label for='mas'>Master's</label>
 
-      <input type = 'checkbox' id='phd' name='school' value='phd' required>
-      <label for='phd'>Ph.D</label>
+        <input type = 'checkbox' id='phd' name='school' value='phd' required>
+        <label for='phd'>Ph.D</label>
 
-      <input type = 'checkbox' id='doc' name='school' value='doc' required>
-      <label for='doc'>Doctorate</label>
-    </div>
-    <div>
-      <p>Do you believe in God or a higher power?</p>
-      <input type = 'radio' id='yes' name='god' value='yes' required>
-      <label for='yes'>Yes</label>
+        <input type = 'checkbox' id='doc' name='school' value='doc' required>
+        <label for='doc'>Doctorate</label>
+      </div>
+      <div>
+        <p>Do you believe in God or a higher power?</p>
+        <input type = 'radio' id='yes' name='god' value='yes' required>
+        <label for='yes'>Yes</label>
 
-      <input type = 'radio' id='no' name='god' value='no' required>
-      <label for='no'>No</label>
-    </div>
-    <div>
-      <p>What things are valuable to you?</p>
-    </div>
-    <p>What would you die for?</p>
-    <p>What will always live forever?</p>
-    <p>How do people generally know things?</p>
-    <p>What is the ideal society?</p>
-    <p>When you're trying to understand something, what is the first thing you think about?</p>
-    <p>What is beautiful to you?</p>
+        <input type = 'radio' id='no' name='god' value='no' required>
+        <label for='no'>No</label>
+      </div>
+      <div>
+        <p>What things are valuable to you?</p>
+        <input type = 'checkbox' id='acc' name='value' value='acc' required>
+        <label for='acc'>Accountability</label>
+
+        <input type = 'checkbox' id='ach' name='value' value='ach' required>
+        <label for='ach'>Achievement</label>
+
+        <input type = 'checkbox' id='ada' name='value' value='ada' required>
+        <label for='ada'>Adaptability</label>
+
+        <input type = 'checkbox' id='adv' name='value' value='adv' required>
+        <label for='adv'>Adventure</label>
+
+        <input type = 'checkbox' id='alt' name='value' value='alt' required>
+        <label for='alt'>Altruism</label>
+
+        <input type = 'checkbox' id='auth' name='value' value='auth' required>
+        <label for='auth'>Authenticity</label>
+
+        <input type = 'checkbox' id='bal' name='value' value='bal' required>
+        <label for='bal'>Balance</label>
+
+        <input type = 'checkbox' id='beau' name='value' value='beau' required>
+        <label for='beau'>Beauty</label>
+
+        <input type = 'checkbox' id='bel' name='value' value='bel' required>
+        <label for='bel'>Belonging</label>
+
+        <input type = 'checkbox' id='car' name='value' value='car' required>
+        <label for='car'>Career</label>
+
+        <input type = 'checkbox' id='care' name='value' value='care' required>
+        <label for='care'>Caring</label>
+
+        <input type = 'checkbox' id='collab' name='value' value='collab' required>
+        <label for='collab'>Collaboration</label>
+
+        <input type = 'checkbox' id='comm' name='value' value='comm' required>
+        <label for='comm'>Commitment</label>
+
+        <input type = 'checkbox' id='com' name='value' value='com' required>
+        <label for='com'>Competence</label>
+
+        <input type = 'checkbox' id='con' name='value' value='con' required>
+        <label for='con'>Confidence</label>
+
+        <input type = 'checkbox' id='cou' name='value' value='cou' required>
+        <label for='cou'>Courage</label>
+
+        <input type = 'checkbox' id='crea' name='value' value='crea' required>
+        <label for='crea'>Creativity</label>
+
+        <input type = 'checkbox' id='cur' name='value' value='cur' required>
+        <label for='cur'>Curiosity</label>
+
+        <input type = 'checkbox' id='dig' name='value' value='dig' required>
+        <label for='dig'>Dignity</label>
+
+        <input type = 'checkbox' id='div' name='value' value='div' required>
+        <label for='div'>Diversity</label>
+
+        <input type = 'checkbox' id='env' name='value' value='env' required>
+        <label for='env'>Environment</label>
+
+        <input type = 'checkbox' id='eff' name='value' value='eff' required>
+        <label for='eff'>Efficiency</label>
+
+        <input type = 'checkbox' id='joy' name='value' value='joy' required>
+        <label for='joy'>Joy</label>
+
+
+      </div>
+      <p>What would you die for?</p>
+      <p>What will always live forever?</p>
+      <p>How do people generally know things?</p>
+      <p>What is the ideal society?</p>
+      <p>When you're trying to understand something, what is the first thing you think about?</p>
+      <p>What is beautiful to you?</p>
+    </form>
   </body>
 </html>
